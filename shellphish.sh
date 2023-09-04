@@ -326,7 +326,7 @@ menu
 fi
 }
 stop() {
-checkngrok=$(ps aux | grep -o "ngrok" | head -n1)
+checkcf=$(ps aux | grep -o "cloudflared" | head -n1)
 checkphp=$(ps aux | grep -o "php" | head -n1)
 checkssh=$(ps aux | grep -o "ssh" | head -n1)
 if [[ $checkcf == *'cloudflared'* ]]; then
