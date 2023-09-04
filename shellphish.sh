@@ -331,7 +331,7 @@ checkphp=$(ps aux | grep -o "php" | head -n1)
 checkssh=$(ps aux | grep -o "ssh" | head -n1)
 if [[ $checkcf == *'cloudflared'* ]]; then
 pkill -f -2 cloudflared > /dev/null 2>&1
-killall -2 cloudflared > /dev/null 2>&
+killall -2 cloudflared > /dev/null 2>&1
 fi
 if [[ $checkphp == *'php'* ]]; then
 pkill -f -2 php > /dev/null 2>&1
